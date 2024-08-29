@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX CRUD using XHR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body onload="getItems()">
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/xhr.html">XHR</a> |
+        <a href="/fetch.html">Fetch</a> |
+        <a href="/jquery.html">JQuery</a>
+    </nav>
+    <h1>AJAX CRUD using XHR</h1>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="id" placeholder="id">
+        <input type="text" id="modelname" placeholder="Model Name">
+        <input type="text" id="year" placeholder="Year">
+        <input type="text" id="price" placeholder="Price">
+        <input type="text" id="company" placeholder="Company">
+        <button type="submit" id="myBtn">Save</button>
+    </form>
+
+    <p id="counter"></p>
+
+    <table class="table table-condensed">
+        <tr>
+            <th>ID</th>
+            <th>Model Name</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Company</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tbody id="models"></tbody>
+    </table>
+
+    <script src="mobile.js"></script>
+</body>
+</html>
