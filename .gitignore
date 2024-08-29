@@ -1,5 +1,2 @@
-# Ignore the pom.xml file
-pom.xml
-
 # Ignore the target directory
 target/
